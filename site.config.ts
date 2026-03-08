@@ -1,17 +1,16 @@
 export const siteConfig = {
   business: {
-    name: "Precision Auto Spa",
-    tagline: "Perfection. Delivered.",
-    eyebrow: "FLORIDA'S PREMIER AUTO SPA",
+    name: "Blackline Auto Detail",
+    tagline: "Luxury Mobile Auto Detailing, Without Compromise.",
+    eyebrow: "PREMIUM PAINT CARE & PROTECTION",
     description:
-      "Precision Auto Spa is Florida's concierge-level detailing atelier, restoring and preserving exotic, luxury, and performance vehicles with obsessive craftsmanship.",
+      "Blackline Auto Detail delivers high-end mobile detailing for luxury, exotic, and daily vehicles. From paint correction to ceramic coating, we provide flawless finishes with white-glove service.",
     owner: {
-      name: "Javier Morales",
+      name: "Marco Delaney",
       title: "Founder & Master Detailer",
-      bio: "Javier Morales built Precision Auto Spa around one idea: every vehicle deserves coach-built attention. Trained in advanced correction methodologies and trusted by discerning collectors, Javier combines paint science, lighting analysis, and tactile refinement to deliver mirror-grade finishes that hold up in Florida's climate. His process is meticulous, discreet, and engineered for owners who expect uncompromising excellence.",
-      certifications: ["Ceramic Pro Certified Installer", "IDA Skills Validated"],
-      image:
-        "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800",
+      bio: "Marco Delaney built Blackline Auto Detail to raise the standard for vehicle appearance care. With years of hands-on correction and coating experience, Marco combines technical precision with a design-forward eye for finish quality. Every vehicle is evaluated under proper lighting, corrected methodically, and protected with professional products chosen for long-term performance.",
+      certifications: ["IDA Certified Detailer", "System X Certified Installer", "Gtechniq Accredited"],
+      image: "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?w=1200",
     },
   },
   serviceAreas: [
@@ -19,44 +18,51 @@ export const siteConfig = {
     "Fort Lauderdale",
     "Boca Raton",
     "West Palm Beach",
+    "Coral Gables",
+    "Aventura",
     "Naples",
-    "Sarasota",
     "Orlando",
     "Tampa",
   ],
   contact: {
     phone: "(305) 555-0148",
-    email: "concierge@precisionautospa.com",
+    phoneRaw: "+13055550148",
+    email: "bookings@blacklineautodetail.com",
     address: "South Florida Studio + Mobile Concierge Service",
-    cta: "Book Private Consultation",
-  },
-  socials: {
-    instagram: "https://instagram.com/precisionautospa",
-    facebook: "https://facebook.com/precisionautospa",
-    youtube: "https://youtube.com/@precisionautospa",
-    tiktok: "https://tiktok.com/@precisionautospa",
+    cta: "Call For Consultation",
   },
   services: [
     {
       name: "Maintenance Detail",
       summary:
-        "A disciplined upkeep plan that protects gloss, clarity, and cabin integrity between major correction cycles.",
-      image:
-        "https://images.unsplash.com/photo-1485291571150-772bcfc10da5?w=1800",
+        "A scheduled maintenance package that keeps paint, wheels, glass, and interior surfaces looking consistently fresh between major correction visits.",
+      image: "https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=1600",
+      duration: "2-3 Hours",
+      price: "$225",
     },
     {
       name: "Paint Correction",
       summary:
-        "Multi-stage machine correction to eliminate haze, swirls, and micro-marring while restoring depth and true color.",
-      image:
-        "https://images.unsplash.com/photo-1617469767053-d3b523a0b982?w=1800",
+        "Multi-stage machine polishing to remove swirl marks, oxidation, and haze while restoring depth, gloss, and clarity to your vehicle's finish.",
+      image: "https://images.unsplash.com/photo-1632823471565-1ecdf3442d0b?w=1600",
+      duration: "1-2 Days",
+      price: "$750",
     },
     {
       name: "Ceramic Coating",
       summary:
-        "Professional-grade ceramic systems for unrivaled gloss, hydrophobic behavior, and long-term surface defense.",
-      image:
-        "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1800",
+        "Professional ceramic protection that enhances gloss, improves washability, and shields surfaces against UV damage, water spotting, and contaminants.",
+      image: "https://images.unsplash.com/photo-1493238792000-8113da705763?w=1600",
+      duration: "1-2 Days",
+      price: "$1,100",
+    },
+    {
+      name: "Interior Revival",
+      summary:
+        "Comprehensive interior steam cleaning, leather conditioning, stain treatment, and trim restoration for a like-new cabin experience.",
+      image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1600",
+      duration: "3-4 Hours",
+      price: "$295",
     },
   ],
 } as const;
