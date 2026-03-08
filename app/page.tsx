@@ -41,10 +41,20 @@ export default function HomePage() {
           PRECISION.
         </h1>
 
-        <button className="absolute bottom-12 right-12 w-32 h-32 bg-white text-black flex flex-col justify-center items-center text-xs font-bold uppercase tracking-widest hover:bg-zinc-200 transition-colors z-10">
-          <span>Book</span>
-          <span>Now</span>
-        </button>
+        <a
+          href="#booking"
+          className="absolute bottom-12 right-8 md:right-16 group flex items-center gap-4 px-8 py-4 rounded-full bg-white/5 backdrop-blur-xl border border-white/10 hover:bg-white/10 transition-all duration-300 cursor-pointer"
+        >
+          <span className="text-white text-xs font-semibold uppercase tracking-[0.2em]">Book Now</span>
+          <svg
+            className="w-4 h-4 text-white transform group-hover:translate-x-2 transition-transform duration-300"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
       </section>
 
       <section className="border-y border-white/10 bg-black py-6">
