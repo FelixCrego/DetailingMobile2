@@ -15,15 +15,60 @@ const spaceGrotesk = Space_Grotesk({
   display: "swap",
 });
 
+const siteUrl = "https://precisionautospa.com";
+
 export const metadata: Metadata = {
-  title: `${siteConfig.business.name} | ${siteConfig.business.tagline}`,
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: `${siteConfig.business.name} | Mobile Auto Detailing in Florida`,
+    template: `%s | ${siteConfig.business.name}`,
+  },
   description: siteConfig.business.description,
+  keywords: [
+    "mobile detailing florida",
+    "luxury car detailing",
+    "ceramic coating florida",
+    "paint correction near me",
+    "auto detailing miami",
+    "concierge car detailing",
+    ...siteConfig.serviceAreas.map((city) => `auto detailing ${city.toLowerCase()}`),
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  category: "Automotive Services",
   openGraph: {
     title: `${siteConfig.business.name} | Luxury Mobile Detailing`,
     description: siteConfig.business.description,
+    url: siteUrl,
     siteName: siteConfig.business.name,
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=1600",
+        width: 1600,
+        height: 900,
+        alt: "Precision Auto Spa luxury detailing showcase",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteConfig.business.name} | Perfection. Delivered.`,
+    description: siteConfig.business.description,
+    images: ["https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=1600"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
 };
 
@@ -34,8 +79,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
-      <body className="font-[family-name:var(--font-inter)] bg-zinc-950 text-white antialiased">
-        <header className="sticky top-0 z-50 border-b border-white/10 bg-zinc-950/50 backdrop-blur-md">
+      <body className="bg-zinc-950 font-[family-name:var(--font-inter)] text-white antialiased selection:bg-amber-300 selection:text-zinc-900">
+        <header className="sticky top-0 z-50 border-b border-white/10 bg-zinc-950/60 backdrop-blur-md">
           <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-10">
             <div>
               <p className="font-[family-name:var(--font-space-grotesk)] text-lg font-bold tracking-tight">
