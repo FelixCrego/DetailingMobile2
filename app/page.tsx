@@ -58,12 +58,11 @@ export default function HomePage() {
 
       <motion.div {...fadeUp} className="bg-black">
         <section className="grid grid-cols-1 lg:grid-cols-2 min-h-[70vh] border-b border-white/10">
-          <div className="relative min-h-[40vh] lg:min-h-full">
-            <Image
-              src="https://images.unsplash.com/photo-1610448161081-3444fc27236d"
-              alt="Ceramic coating specialist applying protection"
-              fill
-              className="object-cover opacity-80"
+          <div className="relative w-full h-full min-h-[50vh] lg:min-h-full overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1610448161081-3444fc27236d?q=80&w=1000&auto=format&fit=crop"
+              alt="Ceramic Coating Water Beading"
+              className="absolute inset-0 w-full h-full object-cover opacity-80 transition-transform duration-1000 hover:scale-105"
             />
           </div>
           <div className="flex flex-col justify-center p-12 lg:p-24 bg-black relative">
@@ -107,23 +106,21 @@ export default function HomePage() {
               Explore
             </button>
           </div>
-          <div className="relative min-h-[40vh] lg:min-h-full order-1 lg:order-2">
-            <Image
-              src="https://images.unsplash.com/photo-1600661653561-629509216228"
-              alt="Detailer correcting paint defects"
-              fill
-              className="object-cover opacity-80"
+          <div className="relative w-full h-full min-h-[50vh] lg:min-h-full overflow-hidden order-1 lg:order-2">
+            <img
+              src="https://images.unsplash.com/photo-1600661653561-629509216228?q=80&w=1000&auto=format&fit=crop"
+              alt="Paint Correction Polishing"
+              className="absolute inset-0 w-full h-full object-cover opacity-80 transition-transform duration-1000 hover:scale-105"
             />
           </div>
         </section>
 
         <section className="grid grid-cols-1 lg:grid-cols-2 min-h-[70vh] border-b border-white/10">
-          <div className="relative min-h-[40vh] lg:min-h-full">
-            <Image
-              src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
-              alt="Concierge maintenance for exotic vehicles"
-              fill
-              className="object-cover opacity-80"
+          <div className="relative w-full h-full min-h-[50vh] lg:min-h-full overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1000&auto=format&fit=crop"
+              alt="Luxury Car Maintenance"
+              className="absolute inset-0 w-full h-full object-cover opacity-80 transition-transform duration-1000 hover:scale-105"
             />
           </div>
           <div className="flex flex-col justify-center p-12 lg:p-24 bg-black relative">
