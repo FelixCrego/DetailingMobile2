@@ -41,7 +41,7 @@ export default function HomePage() {
           PRECISION.
         </h1>
 
-        <button className="absolute bottom-12 right-12 w-32 h-32 bg-white text-black flex flex-col justify-center items-center text-xs font-bold uppercase tracking-widest hover:bg-zinc-200 transition-colors z-10">
+        <button className="absolute bottom-12 right-12 w-32 h-32 flex flex-col justify-center items-center text-xs font-black uppercase tracking-[0.22em] text-cyan-100 bg-gradient-to-br from-cyan-500 via-fuchsia-500 to-violet-600 border border-cyan-200/80 shadow-[0_0_16px_rgba(34,211,238,0.9),0_0_36px_rgba(217,70,239,0.75),0_0_70px_rgba(139,92,246,0.65)] hover:shadow-[0_0_24px_rgba(34,211,238,1),0_0_48px_rgba(217,70,239,0.95),0_0_90px_rgba(139,92,246,0.8)] hover:scale-105 transition-all duration-300 animate-[pulse_2.2s_ease-in-out_infinite] z-10">
           <span>Book</span>
           <span>Now</span>
         </button>
