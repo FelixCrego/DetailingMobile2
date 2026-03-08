@@ -11,45 +11,21 @@ const reveal = {
   transition: { duration: 0.75, ease: [0.22, 1, 0.36, 1] as const },
 };
 
-const navItems = ["Home", "Services", "Service Areas", "About Us", "Contact"];
-
 export default function HomePage() {
   const [maintenance, correction, ceramic] = siteConfig.services;
 
   return (
-    <main className="relative overflow-hidden bg-[#030712] text-white">
+    <main id="home" className="relative overflow-hidden bg-[#030712] text-white">
       <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_18%_18%,rgba(56,189,248,0.24),transparent_42%),radial-gradient(circle_at_85%_10%,rgba(59,130,246,0.2),transparent_38%),radial-gradient(circle_at_50%_75%,rgba(6,182,212,0.14),transparent_52%)]" />
       <div className="pointer-events-none absolute inset-0 -z-10 bg-[linear-gradient(to_bottom,rgba(2,6,23,0.35),rgba(2,6,23,0.92))]" />
-
-      <header className="fixed inset-x-0 top-0 z-50 border-b border-cyan-100/10 bg-slate-950/55 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-10">
-          <p className="font-[family-name:var(--font-space-grotesk)] text-sm font-bold uppercase tracking-[0.3em] text-cyan-200 md:text-base">
-            {siteConfig.business.name}
-          </p>
-          <nav>
-            <ul className="hidden items-center gap-6 md:flex">
-              {navItems.map((item) => (
-                <li key={item}>
-                  <a
-                    href="#"
-                    className="text-xs font-medium uppercase tracking-[0.2em] text-slate-200 transition hover:text-cyan-200"
-                  >
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
-      </header>
 
       <motion.section
         {...reveal}
         className="relative flex min-h-[94vh] flex-col items-center justify-center overflow-hidden px-6 pb-28 pt-36 text-center"
       >
         <Image
-          src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=3840"
-          alt="Luxury performance car in cinematic studio lighting"
+          src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=3840"
+          alt="Luxury sports car used as the hero background"
           fill
           priority
           className="-z-20 object-cover"
@@ -73,10 +49,11 @@ export default function HomePage() {
             View Signature Packages
           </button>
         </div>
+
       </motion.section>
 
       <div className="mx-auto max-w-7xl space-y-24 px-6 pb-28 md:px-10">
-        <motion.section {...reveal}>
+        <motion.section id="services" {...reveal}>
           <div className="mb-12 max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-[0.34em] text-cyan-300">
               Signature Services
@@ -132,6 +109,7 @@ export default function HomePage() {
         </motion.section>
 
         <motion.section
+          id="about"
           {...reveal}
           className="grid items-center gap-12 rounded-3xl border border-cyan-100/15 bg-gradient-to-r from-slate-900/65 via-slate-900/55 to-blue-950/35 p-8 shadow-[0_20px_60px_rgba(14,116,144,0.2)] backdrop-blur-2xl md:grid-cols-2 md:p-12"
         >
@@ -163,26 +141,6 @@ export default function HomePage() {
           </div>
         </motion.section>
       </div>
-
-      <footer className="border-t border-cyan-100/10 bg-slate-950/70">
-        <div className="mx-auto flex max-w-7xl flex-col gap-8 px-6 py-10 md:px-10">
-          <div className="flex flex-wrap items-center gap-x-8 gap-y-3">
-            {navItems.map((item) => (
-              <a
-                key={item}
-                href="#"
-                className="text-xs font-medium uppercase tracking-[0.2em] text-slate-300 transition hover:text-cyan-200"
-              >
-                {item}
-              </a>
-            ))}
-          </div>
-          <p className="text-sm text-slate-400">
-            © {new Date().getFullYear()} {siteConfig.business.name}. Crafted for a showroom-level first
-            impression.
-          </p>
-        </div>
-      </footer>
     </main>
   );
 }
