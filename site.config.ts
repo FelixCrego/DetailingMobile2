@@ -1,14 +1,15 @@
 export const siteConfig = {
   business: {
-    name: "Precision Auto Spa",
-    tagline: "Perfection. Delivered.",
-    eyebrow: "FLORIDA'S PREMIER AUTO SPA",
+    name: "Elite Detailing Mobile Repair",
+    tagline: "Command the Elements. Land & Sea.",
+    eyebrow: "FLORIDA'S HEAVY-DUTY RESTORATION EXPERTS",
     description:
-      "Precision Auto Spa is Florida's concierge-level detailing atelier, restoring and preserving exotic, luxury, and performance vehicles with obsessive craftsmanship.",
+      "Elite Detailing Mobile Repair delivers master-level surface restoration for exotics, marine vessels, luxury RVs, and heavy-duty fleets across Florida.",
+    logo: "/elite-logo.svg",
     owner: {
       name: "Javier Morales",
       title: "Founder & Master Detailer",
-      bio: "Javier Morales built Precision Auto Spa around one idea: every vehicle deserves coach-built attention. Trained in advanced correction methodologies and trusted by discerning collectors, Javier combines paint science, lighting analysis, and tactile refinement to deliver mirror-grade finishes that hold up in Florida's climate. His process is meticulous, discreet, and engineered for owners who expect uncompromising excellence.",
+      bio: "Javier Morales built Elite Detailing Mobile Repair around one idea: every vehicle deserves coach-built attention. Trained in advanced correction methodologies and trusted by discerning collectors, Javier combines paint science, lighting analysis, and tactile refinement to deliver mirror-grade finishes that hold up in Florida's climate. His process is meticulous, discreet, and engineered for owners who expect uncompromising excellence.",
       certifications: ["Ceramic Pro Certified Installer", "IDA Skills Validated"],
       image:
         "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800",
@@ -25,16 +26,16 @@ export const siteConfig = {
     "Tampa",
   ],
   contact: {
-    phone: "(305) 555-0148",
-    email: "concierge@precisionautospa.com",
-    address: "South Florida Studio + Mobile Concierge Service",
-    cta: "Book Private Consultation",
+    phone: "(386) 340-5989",
+    email: "elite@elitedetailingmobile.com",
+    address: "Florida Mobile Dockside + On-Site Service",
+    cta: "Call (386) 340-5989",
   },
   socials: {
-    instagram: "https://instagram.com/precisionautospa",
-    facebook: "https://facebook.com/precisionautospa",
-    youtube: "https://youtube.com/@precisionautospa",
-    tiktok: "https://tiktok.com/@precisionautospa",
+    instagram: "https://instagram.com/elitedetailingmobile",
+    facebook: "https://facebook.com/elitedetailingmobile",
+    youtube: "https://youtube.com/@elitedetailingmobile",
+    tiktok: "https://tiktok.com/@elitedetailingmobile",
   },
   services: [
     {
