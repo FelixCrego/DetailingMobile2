@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220" role="img" aria-label="Elite Detailing Mobile Repair logo placeholder">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#dc2626"/>
+      <stop offset="1" stop-color="#991b1b"/>
+    </linearGradient>
+  </defs>
+  <rect width="220" height="220" rx="20" fill="#000"/>
+  <path d="M110 20 190 60v100l-80 40-80-40V60z" fill="none" stroke="url(#g)" stroke-width="8"/>
+  <text x="110" y="105" fill="#ef4444" font-size="30" text-anchor="middle" font-family="Arial Black, Arial" letter-spacing="2">ELITE</text>
+  <text x="110" y="132" fill="#fff" font-size="14" text-anchor="middle" font-family="Arial, sans-serif" letter-spacing="2">DETAILING</text>
+  <text x="110" y="156" fill="#9ca3af" font-size="10" text-anchor="middle" font-family="Arial, sans-serif" letter-spacing="1">MOBILE REPAIR</text>
+</svg>

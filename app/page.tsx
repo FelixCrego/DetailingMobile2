@@ -20,8 +20,8 @@ export default function HomePage() {
           transition={{ duration: 20, repeat: Infinity, repeatType: "mirror" }}
         >
           <Image
-            src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=3840"
-            alt="Luxury automotive hero background"
+            src="https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?q=80&w=3840"
+            alt="Cinematic luxury yacht on dark water"
             fill
             priority
             className="object-cover"
@@ -31,28 +31,46 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/40 z-0 pointer-events-none" />
 
         <nav className="absolute top-0 w-full p-8 flex justify-between items-center text-white text-xs tracking-widest uppercase font-mono border-b border-white/10 z-10">
-          <span>Detailing Mobile</span>
-          <span>Los Angeles</span>
+          <span className="flex items-center gap-3">
+            <Image
+              src="/elite-logo.svg"
+              alt="Elite Detailing Mobile Repair logo"
+              width={34}
+              height={34}
+              className="h-8 w-8 rounded-sm border border-red-600/50 bg-black"
+            />
+            Elite Detailing Mobile Repair
+          </span>
+          <span>(386) 340-5989</span>
         </nav>
 
+        <p className="absolute top-28 left-12 text-xs tracking-[0.25em] uppercase text-red-600 font-semibold z-10">
+          FLORIDA&apos;S HEAVY-DUTY RESTORATION EXPERTS
+        </p>
+
         <h1 className="absolute bottom-12 left-12 text-[10vw] leading-[0.8] tracking-tighter font-black text-white mix-blend-overlay opacity-90 z-10">
-          OBSESSIVE
+          Command the Elements.
           <br />
-          PRECISION.
+          Land &amp; Sea.
         </h1>
 
-        <button className="absolute bottom-12 right-12 w-32 h-32 bg-white text-black flex flex-col justify-center items-center text-xs font-bold uppercase tracking-widest hover:bg-zinc-200 transition-colors z-10">
-          <span>Book</span>
-          <span>Now</span>
+        <p className="absolute bottom-44 left-12 max-w-2xl text-zinc-300 text-sm md:text-base leading-relaxed z-10">
+          Master-level surface restoration for exotics, marine vessels, and luxury RVs. We engineer
+          perfection wherever you are parked or docked.
+        </p>
+
+        <button className="absolute bottom-12 right-12 h-16 min-w-56 rounded-full border border-red-600/55 bg-black/45 backdrop-blur-sm px-8 text-red-600 text-sm font-bold uppercase tracking-[0.3em] hover:bg-red-600/15 transition-colors z-10 flex items-center justify-between">
+          <span>Book Now</span>
+          <span aria-hidden="true" className="text-2xl leading-none">→</span>
         </button>
       </section>
 
       <section className="border-y border-white/10 bg-black py-6">
         <div className="text-xs tracking-[0.2em] text-zinc-500 uppercase flex justify-around items-center max-w-7xl mx-auto px-4 gap-4 flex-wrap">
-          <span>Ceramic Pro Certified</span>
-          <span>Fully Insured & Licensed</span>
-          <span>10+ Years Master Experience</span>
-          <span>Florida&apos;s Exotic Specialists</span>
+          <span>MOBILE REPAIR &amp; DETAILING</span>
+          <span>MARINE GELCOAT SPECIALISTS</span>
+          <span>RV OXIDATION REMOVAL</span>
+          <span>EXOTIC CORRECTION EXPERTS</span>
         </div>
       </section>
 
@@ -60,8 +78,8 @@ export default function HomePage() {
         <section className="grid grid-cols-1 lg:grid-cols-2 min-h-[70vh] border-b border-white/10">
           <div className="relative min-h-[40vh] lg:min-h-full">
             <Image
-              src="https://images.unsplash.com/photo-1610448161081-3444fc27236d"
-              alt="Ceramic coating specialist applying protection"
+              src="https://images.unsplash.com/photo-1620050843518-7090858e7ce6?q=80&w=1000"
+              alt="Marine gelcoat correction on a speedboat"
               fill
               className="object-cover opacity-80"
             />
@@ -70,16 +88,16 @@ export default function HomePage() {
             <span className="absolute top-10 right-10 text-[10rem] font-black text-white/5 leading-none">
               01
             </span>
-            <p className="text-xs text-zinc-500 tracking-[0.2em] uppercase mb-4 relative z-10">
-              Liquid Glass Defense
+            <p className="text-xs text-red-600 tracking-[0.2em] uppercase mb-4 relative z-10">
+              Nautical Perfection
             </p>
             <h2 className="text-5xl font-bold text-white tracking-tighter mb-6 relative z-10">
-              Ceramic Coating.
+              Marine Gelcoat Correction.
             </h2>
             <p className="text-zinc-300 leading-relaxed max-w-xl mb-10 relative z-10">
-              Our silica-carbide matrix chemically bonds to your clear coat, forming a hardened,
-              sacrificial shell that rejects Florida&apos;s punishing UV exposure, salt-laden humidity,
-              and airborne chemical fallout while amplifying gloss with a deep, editorial-grade finish.
+              Saltwater and UV rays destroy marine finishes. We execute multi-stage gelcoat correction,
+              sanding, and heavy compounding to restore factory gloss. Starting at $60 per foot for boats
+              and $250 for Jetskis.
             </p>
             <button className="self-start border border-white/30 text-white px-8 py-4 text-xs tracking-[0.2em] uppercase hover:bg-white hover:text-black transition-colors relative z-10">
               Explore
@@ -92,16 +110,16 @@ export default function HomePage() {
             <span className="absolute top-10 right-10 text-[10rem] font-black text-white/5 leading-none">
               02
             </span>
-            <p className="text-xs text-zinc-500 tracking-[0.2em] uppercase mb-4 relative z-10">
-              Optical Refinement Protocol
+            <p className="text-xs text-red-600 tracking-[0.2em] uppercase mb-4 relative z-10">
+              Heavy-Duty Preservation
             </p>
             <h2 className="text-5xl font-bold text-white tracking-tighter mb-6 relative z-10">
-              Paint Correction.
+              RV &amp; Fleet Rejuvenation.
             </h2>
             <p className="text-zinc-300 leading-relaxed max-w-xl mb-10 relative z-10">
-              Through calibrated multi-stage machine correction, we level micro-marring, oxidation,
-              and holograms at a sub-micron scale to recover clarity, restore depth, and reveal a
-              mirror-flat surface engineered for high-contrast reflections under direct sun.
+              Florida&apos;s environment poses unique challenges to large-scale clear coats. We provide
+              intensive pressure washing, bug removal, oxidation buffing, and high-grade polish
+              restoration for RVs, campers, and semi-trucks.
             </p>
             <button className="self-start border border-white/30 text-white px-8 py-4 text-xs tracking-[0.2em] uppercase hover:bg-white hover:text-black transition-colors relative z-10">
               Explore
@@ -109,8 +127,8 @@ export default function HomePage() {
           </div>
           <div className="relative min-h-[40vh] lg:min-h-full order-1 lg:order-2">
             <Image
-              src="https://images.unsplash.com/photo-1600661653561-629509216228"
-              alt="Detailer correcting paint defects"
+              src="https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?q=80&w=1000"
+              alt="Luxury RV restoration service"
               fill
               className="object-cover opacity-80"
             />
@@ -120,8 +138,8 @@ export default function HomePage() {
         <section className="grid grid-cols-1 lg:grid-cols-2 min-h-[70vh] border-b border-white/10">
           <div className="relative min-h-[40vh] lg:min-h-full">
             <Image
-              src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
-              alt="Concierge maintenance for exotic vehicles"
+              src="https://images.unsplash.com/photo-1600661653561-629509216228?q=80&w=1000"
+              alt="Precision polishing for exotic auto restoration"
               fill
               className="object-cover opacity-80"
             />
@@ -130,16 +148,15 @@ export default function HomePage() {
             <span className="absolute top-10 right-10 text-[10rem] font-black text-white/5 leading-none">
               03
             </span>
-            <p className="text-xs text-zinc-500 tracking-[0.2em] uppercase mb-4 relative z-10">
-              White-Glove Preservation
+            <p className="text-xs text-red-600 tracking-[0.2em] uppercase mb-4 relative z-10">
+              Precision Cut
             </p>
             <h2 className="text-5xl font-bold text-white tracking-tighter mb-6 relative z-10">
-              Concierge Maintenance.
+              Automotive Paint Correction.
             </h2>
             <p className="text-zinc-300 leading-relaxed max-w-xl mb-10 relative z-10">
-              Built for collectors and daily-driven exotics alike, our concierge maintenance cadence
-              preserves coating performance, eliminates bonded contamination, and keeps every panel,
-              wheel, and interior surface presentation-ready year-round.
+              Sub-micron leveling of your vehicle&apos;s clear coat to eliminate swirls, haze, and
+              micro-marring, finished with long-term ceramic defense.
             </p>
             <button className="self-start border border-white/30 text-white px-8 py-4 text-xs tracking-[0.2em] uppercase hover:bg-white hover:text-black transition-colors relative z-10">
               Explore
